@@ -1,13 +1,26 @@
+body {
+	margin: 0;
+}
+
 .page-wrapper {
-	
+	margin: 0;
 }
 
-.container {
-	@include container;
-}
-
-@mixin container($width: 1200px) {
+@mixin container($width: 1280px) {
 	max-width: $width;
 	margin: 0 auto;
 	padding: 0 20px;
 }
+
+@mixin clearfix {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.container {
+	@include container;
+	
+}
+
+
